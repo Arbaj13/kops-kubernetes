@@ -17,12 +17,12 @@ spec:
         image: arbaj13/appserver
         ports:
         - containerPort: 8080
-      initContainers:
-        - name: init-mydb
-          image: busybox
-          command: ['sh','-c','untill nslookup vprodb; do echo waiting for mydb; sleep 2; done;']
-        - name: init-vpromq01
-          image: busybox
-          command: ['sh','-c','untill nslookup vpromq01; do echo waiting for vpromq01; sleep 2; done;']
+#       initContainers:
+#         - name: init-mydb
+#           image: busybox
+#           command: ['sh','-c','untill nslookup vprodb; do echo waiting for mydb; sleep 2; done;']
+#         - name: init-vpromq01
+#           image: busybox
+#           command: ['sh','-c','untill nslookup vpromq01; do echo waiting for vpromq01; sleep 2; done;']
 
         
